@@ -14,7 +14,21 @@ If the execution environment of AWS Lambda changes, this package may not work.
 
 This package created on Amazon Linux(`amzn-ami-hvm-2017.03.1.20170812-x86_64-gp2`).
 
-# reference
+# Reference
 
-For the creation procedure, refer to the following.
+For the creation commands, refer to the following.
 https://alestic.com/2016/11/aws-lambda-awscli/
+
+on Amazon Linux, you'll need following 2 steps.
+
+* install libyaml-devel for PyYAML
+
+```
+sudo yum install libyaml-devel
+```
+
+* put `lib64` library into package
+
+```
+(cd $virtualenv/lib64/python2.7/site-packages; zip -r9 $zipfile .)
+```
