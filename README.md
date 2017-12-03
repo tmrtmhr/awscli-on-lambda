@@ -5,7 +5,7 @@ sample AWS Lambda package for running [AWS Command Line Interface](https://aws.a
 
 1. modify `main.py` as you like
 1. update package `zip -r9 lambda.zip main.py`
-1. deploy package and choose runtime "Python 2.7"
+1. deploy package and choose runtime "Python 2.7", set Handler "main.handle"
 
 # Warning
 
